@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/anOkas888/vsrpp-labs/static/css/main.89482e6d.css",
-    "main.js": "/anOkas888/vsrpp-labs/static/js/main.314da3bc.js",
-    "static/media/background.jpg": "/anOkas888/vsrpp-labs/static/media/background.593fb8b63ad7439273b1.jpg",
-    "index.html": "/anOkas888/vsrpp-labs/index.html",
-    "main.89482e6d.css.map": "/anOkas888/vsrpp-labs/static/css/main.89482e6d.css.map",
-    "main.314da3bc.js.map": "/anOkas888/vsrpp-labs/static/js/main.314da3bc.js.map"
+    "main.css": "/vsrpp-labs/static/css/main.17677dad.css",
+    "main.js": "/vsrpp-labs/static/js/main.314da3bc.js",
+    "static/media/background.jpg": "/vsrpp-labs/static/media/background.593fb8b63ad7439273b1.jpg",
+    "index.html": "/vsrpp-labs/index.html",
+    "main.17677dad.css.map": "/vsrpp-labs/static/css/main.17677dad.css.map",
+    "main.314da3bc.js.map": "/vsrpp-labs/static/js/main.314da3bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.89482e6d.css",
+    "static/css/main.17677dad.css",
     "static/js/main.314da3bc.js"
   ]
 }
