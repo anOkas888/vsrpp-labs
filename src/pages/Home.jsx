@@ -6,7 +6,7 @@ import Form from '../Components/Form'
 import Table from '../Components/Table'
 
 const Home = () => {
-  const isAllowed = true // useSelector(state => state.allowed)
+  const isAllowed = useSelector(state => state.allowed)
 
   return !isAllowed
     ? (
