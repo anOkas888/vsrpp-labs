@@ -7,12 +7,15 @@ import SignUp from './pages/SingUp'
 
 const App = () => {
   return (
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='signIn' element={<SignIn />} />
-      <Route path='signUp' element={<SignUp />} />
-      <Route path='*' element={<Whoops404 />} />
-    </Routes>
+    <div className='container'>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='signIn' element={<SignIn />} />
+        <Route path='signUp' element={<SignUp />} />
+        <Route path='*' element={<Whoops404 />} />
+      </Routes>
+    </div>
+
   )
 }
 

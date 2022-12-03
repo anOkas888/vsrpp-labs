@@ -14,10 +14,9 @@ const Home = () => {
       )
     : (
         <div>
-          <div>
+          <div >
             <Form />
           </div>
-          <hr style={{ width: '75%', marginLeft: '17%', float: 'center' }} />
           <div>
             <Table />
           </div>

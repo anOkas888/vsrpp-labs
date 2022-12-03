@@ -30,22 +30,24 @@ const SignIn = () => {
   }
 
   return (
-    <div>
-      <form onSubmit={onSubmit}>
+    <div className='sign'>
+      <form className='sign-form' onSubmit={onSubmit}>
         <h1>Welcome</h1>
-        <p>Sign-in to get started</p>
+        <p>Do not be shy, just try it out. Sign-in to get started</p>
         <div>
-          <div>
+          <div className="field">
             <input
               type='email'
               name='email'
+              className='textBox'
               placeholder='Email'
               required
             />
           </div>
-          <div>
+          <div className="field">
             <input
               type='password'
+              className='textBox'
               placeholder='Password'
               name='password'
               required
@@ -53,17 +55,17 @@ const SignIn = () => {
           </div>
         </div>
         <div>
-          <input
+          <input className="btn"
             type='submit'
             value='Sign-in'
           />
         </div>
       </form>
-      <div>
-        <h4>
+      <div className='sign-in-footer'>
+        <h3>
           First time here?
           <NavLink to='../signUp'> Just sign-up</NavLink>
-        </h4>
+        </h3>
       </div>
     </div>
   )

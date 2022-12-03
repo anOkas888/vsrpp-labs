@@ -24,32 +24,32 @@ const Form = () => {
   }
 
   return (
-    <form
-      onSubmit={onSubmit}>
-      <div>
-        <input type='submit' value='Add User' />
-      </div>
-
-      <div>
+    <form className="home-form" onSubmit={onSubmit}>
+      <div className='fields'>
+      <div className='home-form-field'>
         <label htmlFor='firstName'>
           First name
         </label>
         <input type='text' name='firstName' required />
       </div>
 
-      <div>
+      <div className='home-form-field'>
         <label htmlFor='lastName'>
           Second name
         </label>
         <input type='text' name='lastName' required />
       </div>
 
-      <div>
+      <div className='home-form-field'>
         <label htmlFor='email'>
           Email
         </label>
-        <input type='email' name='email' required />
-      </div>
+          <input type='email' name='email' required />
+        </div>
+        </div>
+        <div>
+          <button className="btn" type='submit'>Add User</button>
+        </div>
     </form>
   )
 }

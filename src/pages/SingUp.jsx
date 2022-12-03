@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useNavigate } from 'react-router'
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -25,46 +26,36 @@ const SignUp = () => {
   }
 
   return (
-    <div>
-      <form onSubmit={onSubmit}>
-        <h1 >We`$apos`re glad to see you</h1>
-        <p>Let`$apos`s know something new about you</p>
-
+    <div className='sign'>
+      <form className='sign-form' onSubmit={onSubmit}>
+        <h1 >We're glad to see you</h1>
+        <p>We need to figure out something about you, please keep calm</p>
         <div>
-          <div>
+          <div className="field-row">
             <label htmlFor='name'>Name</label>
-            <div>
-              <input
-                id='name'
-                type='text'
-                placeholder='Name'
-                required
-              />
-            </div>
+            <input
+            id='name'
+            type='text'
+            placeholder='Name'
+            required />
           </div>
-          <div>
+          <div className="field-row">
             <label htmlFor='email'>Email</label>
-            <div>
-              <input
-                placeholder='Email'
-                required
-              />
-            </div>
+            <input
+            placeholder='Email'
+            required />
           </div>
-          <div>
+          <div className="field-row">
             <label htmlFor='password'>Password</label>
-            <div>
-              <input
-                id='password'
-                type='password'
-                placeholder='Password'
-                required
-              />
-            </div>
+            <input
+              id='password'
+              type='password'
+              placeholder='Password'
+              required />
           </div>
         </div>
         <div>
-          <input
+          <input className='btn btn-sign'
             type='submit'
             value='Sign-up'
           />

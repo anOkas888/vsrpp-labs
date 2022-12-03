@@ -10,7 +10,7 @@ const Table = () => {
     dispatch(removeUser(id))
   }
 
-  useEffect(async () => {
+  useEffect(() => {
     const getFakeMembers = (count = 5) => fetch(`https://api.randomuser.me/?nat=US&results=${count}`)
     getFakeMembers(5)
       .then(response => response.json())
@@ -25,7 +25,6 @@ const Table = () => {
 
   return (
     <table>
-      <caption>Users</caption>
       <thead>
       <tr>
         <th width='17%'>Id</th>
@@ -46,7 +45,7 @@ const Table = () => {
                 <td>{item.lastName}</td>
                 <td>{item.email}</td>
                 <td>
-                  <button onClick={() => onDelete(item.id)}>
+                  <button className='btn' onClick={() => onDelete(item.id)}>
                     Delete
                   </button>
                 </td>
